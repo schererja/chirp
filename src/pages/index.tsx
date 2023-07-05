@@ -18,7 +18,6 @@ const CreatePostWizard = () => {
     },
   });
   const [input, setInput] = useState("");
-  console.log(user);
   if (!user) {
     return null;
   }
