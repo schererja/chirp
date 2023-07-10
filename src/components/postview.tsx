@@ -1,10 +1,9 @@
 import { type RouterOutputs } from "~/utils/api";
+import relativeTime from "dayjs/plugin/relativeTime";
 
 import dayjs from "dayjs";
 import Image from "next/image";
 import Link from "next/link";
-import relativeTime from "dayjs/plugin/relativeTime";
-
 dayjs.extend(relativeTime);
 
 type PostWithUser = RouterOutputs["posts"]["getAll"][number];
